@@ -6,7 +6,7 @@ import navIcon2 from '../assets/img/nav-icon2.svg';
 import navIcon3 from '../assets/img/nav-icon3.svg';
 
 
-export const NavBar = () => {   
+export const Navigation = () => {   
     const [activeLink, setActiveLink] = useState('home');
     const [scrolled, setScrolled] = useState(false);
 
@@ -29,15 +29,15 @@ export const NavBar = () => {
     }
 
     return (
-        <NavBar expand="lg" className={scrolled ? "scrolled": ""}>
+        <Navbar expand="lg" className={scrolled ? "scrolled": ""}>
             <Container>
-                <NavBar.Brand href="#home">
+                <Navbar.Brand href="#home">
                     <img src={logo} alt="logo" />
-                </NavBar.Brand>
-                <NavBar.Toggle aria-controls="basic-navbar-nav" >
+                </Navbar.Brand>
+                <Navbar.Toggle aria-controls="basic-navbar-nav" >
                     <span className="navbar-toggler-icon"></span>
-                </NavBar.Toggle>
-                <NavBar.Collapse id="basic-navbar-nav">
+                </Navbar.Toggle>
+                <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="me-auto">
                         <Nav.Link href="#home" className={activeLink === 'home' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('home')}>Home</Nav.Link>
                         <Nav.Link href="#skills" className={activeLink === 'skills' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('skills')}>Skills</Nav.Link>
@@ -51,10 +51,10 @@ export const NavBar = () => {
                         </div>
                         <button className="vvd" onClick={() => console.log('connect')}><span>Let's Connect</span></button>
                     </span>
-                </NavBar.Collapse>
+                </Navbar.Collapse>
             </Container>
-        </NavBar>
+        </Navbar>
     );
 }
 
-export default NavBar;
+export default Navigation;
