@@ -1,6 +1,6 @@
-import logo from './logo.svg';
 import './App.css';
-import { Navigation } from './components/NavBar.js';
+import { Navigation } from './components/Navigation.js';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   return (
