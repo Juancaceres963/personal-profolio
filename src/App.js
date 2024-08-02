@@ -1,6 +1,6 @@
 import './App.css';
 import { Navigation } from './components/Navigation.js';
-export { Banner } from '-/components/Banner.js';
+import { Banner } from './components/Banner.js';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
