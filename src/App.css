@@ -29,11 +29,11 @@ html {
 }
 
 body {
+  color: #fff !important;
   background-color: #121212 !important;
   font-weight: 400;
   overflow-x: hidden;
   position: relative;
-  color: #fff;
   font-family: 'Center', sans-serif !important;
 }
 
