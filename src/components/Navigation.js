@@ -13,9 +13,9 @@ export const Navigation = () => {
     useEffect(() => {
         const onScroll = () => {
             if (window.scrollY > 50) {
-                onScroll(true);
+                setScrolled(true);
             } else {
-                onScroll(false);
+                setScrolled(false);
             }
         }
 
