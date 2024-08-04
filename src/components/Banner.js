@@ -44,7 +44,7 @@ export const Banner = () => {
             <Container>
                 <Row className="align-items-center">
                     <Col xs={12} md={6} xl={7}>
-                        <span className="tagline">Welcome to my Profolio</span>
+                        <span style={{ color: "#fff"}} className="tagline">Welcome to my Profolio</span>
                         <h1>{`Hi I'm webdecoded`}<br/><span className="wrap">{text}</span></h1>
                         <p>She fans herself with a magazine and bites into a block of gorgonzola. Mum eats cheese when she’s having a breakdown</p>
                         <button onClick={() => console.log('connet')}>Let's connect <ArrowRightCircle size={25}/></button>
