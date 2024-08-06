@@ -28,11 +28,11 @@ export const Skills = () => {
       };
 
       return (
-        <section className='skills' id='skills'>
+        <section className='skill' id='skills'>
             <Container>
                 <Row>
                     <Col>
-                    <div className='skills-bx'>
+                    <div className='skill-bx'>
                         <h2>Skills</h2>
                         <p>She fans herself with a magazine and bites into a block of gorgonzola. Mum eats cheese when she’s having a breakdown She fans herself with a magazine and bites into a block of gorgonzola. Mum eats.</p>
                         <Carousel responsive={responsive} infinite={true} className='skill-slider'>
