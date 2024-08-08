@@ -46,16 +46,16 @@ export const Projects = () => {
                         <h2>Projects</h2>
                         <p>She fans herself with a magazine and bites into a block of gorgonzola. Mum eats cheese when she’s having a breakdown She fans herself with a magazine and bites into a block of gorgonzola.</p>
                         <TabContainer id="projects-tabs" defaultActiveKey="first">
-                            <Nav variant="pills" className="flex-column">
-                            <Nav.Item>
-                                <Nav.Link eventKey="first">Tab One</Nav.Link>
-                            </Nav.Item>
-                            <Nav.Item>
-                                <Nav.Link eventKey="second">Tab Two</Nav.Link>
-                            </Nav.Item>
-                            <Nav.Item>
-                                <Nav.Link eventKey="third">Tab Three</Nav.Link>
-                            </Nav.Item>
+                            <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
+                                <Nav.Item>
+                                    <Nav.Link eventKey="first">Tab One</Nav.Link>
+                                </Nav.Item>
+                                <Nav.Item>
+                                    <Nav.Link eventKey="second">Tab Two</Nav.Link>
+                                </Nav.Item>
+                                <Nav.Item>
+                                    <Nav.Link eventKey="third">Tab Three</Nav.Link>
+                                </Nav.Item>
                             </Nav>
                             <TabContent>
                                 <Tab.Pane eventKey="first">
