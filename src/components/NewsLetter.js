@@ -1,7 +1,25 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
-export const NewsLetter = ({ subscribe, status, message }) => {
+export const NewsLetter = ({ onValidated, status, message }) => {
     const [ email, setEmail ] = useState("");
+
+    useEffect(() => {
+        if (status === "success") clearFields();
+    }, [status])
+
+    const handleSubmit = () => {
+        e.preventDefault();
+        email && 
+        email.indexOf("@") > -1 &&
+        onValidated({
+            EMAIL: email
+        })
+    }
+
+    const clearFields = () => {
+        setEmail("");
+    }
+
     return (
         <Col lg={12}>
             <div className="newsLetter-bx">
