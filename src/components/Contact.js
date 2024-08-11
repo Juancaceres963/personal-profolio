@@ -23,8 +23,24 @@ export const Contact = () => {
         })
     }
 
-    const handleSubmit = () => {
-
+    const handleSubmit = async (e) => {
+        e.prevemtDefault();
+        setButtomText('Sending...');
+        let response = await fetch("http://locallhost:3000/contact", {
+            method: "POST",
+            headers: {
+                "Content-Type": "Aplication/json;charset=utf-8",
+            },
+            body: JSON.stringify(formDetails),
+        });
+        setButtomText("Send");
+        let result = response.json();
+        setFormDetails(formInitialDetails);
+        if (result.code === 200) {
+            setStatus({ success: true, message: "Message sent successfully" })
+        } else {
+            setStatus({ success: false, message: "Something went wrong, please try again later" })
+        }
     }
 
     return (
@@ -32,7 +48,7 @@ export const Contact = () => {
             <Container>
                 <Row className="aling-items-center">
                     <Col md={6}>
-                        <img src={contactImg} alt="Contact Image"/>
+                        <img src={contactImg} alt="Contact Image" />
                     </Col>
                     <Col md={6}>
                         <h2>Get In Touch</h2>
