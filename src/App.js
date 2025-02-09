@@ -1,4 +1,5 @@
 import './App.css';
+import BackgroundVideo from './components/BackgroundVideo.js'
 import { Navigation } from './components/Navigation.js';
 import { Banner } from './components/Banner.js';
 import { Skills } from './components/Skills.js';
@@ -10,6 +11,7 @@ import { Footer } from './components/Footer.js';
 function App() {
   return (
     <div className="App">
+      <BackgroundVideo />
       <Navigation/>
       <Banner/>
       <Skills/>

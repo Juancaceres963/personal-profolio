@@ -113,12 +113,12 @@ span.navbar-text {
     margin-left: 14px;
 }
 .social-icon a {
-    width: 42px;
-    height: 42px;
+    width: 50px;
+    height: 50px;
     background: rgba(217, 217, 217, 0.1);
     display: inline-flex;
     border-radius: 50%;
-    margin-right: 6px;
+    margin-right: 8px;
     align-items: center;
     justify-content: center;
     line-height: 1;
@@ -126,8 +126,8 @@ span.navbar-text {
 }
 .social-icon a::before {
     content: "";
-    width: 42px;
-    height: 42px;
+    width: 50px;
+    height: 50px;
     position: absolute;
     background-color: #ffffff;
     border-radius: 50%;
@@ -225,15 +225,44 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 	border-color: transparent;
 }
 
+/* Background Video */
+
+.video-background {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.video-background video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  object-fit: cover; /* Evita bordes negros */
+  z-index: -1;
+}
+
+.overlay {
+  position: absolute;
+  z-index: 1;
+  color: white;
+  text-align: center;
+  padding-top: 20%;
+  font-size: 2rem;
+}
+
 /************ Banner Css ************/
 
 .banner {
+  position: relative;
   margin-top: 0;
   padding: 260px 0 100px 0;
-  background-image: url('./assets/img/banner-bg.png');
-  background-position: top center;
-  background-size: cover;
-  background-repeat: no-repeat;
+  z-index: 1;
 }
 .banner .tagline {
   font-weight: 700;
@@ -278,8 +307,8 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .banner button:hover svg {
   margin-left: 25px;
 }
-.banner img {
-  animation: updown 3s linear infinite;
+.banner-img {
+   /* animation: updown 3s linear infinite;  */
 }
 @keyframes updown {
     0% {
