@@ -67,6 +67,7 @@
             strokeDasharray={circumference}
             strokeDashoffset={circumference - (circumference * progress) / 100}
             strokeLinecap="round"
+            
             transform="rotate(-90 60 60)"
             style={{ transition: "stroke-dashoffset 0.5s ease-out" }}
           />
