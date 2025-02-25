@@ -11,7 +11,10 @@ export const Footer = () => {
       <Container>
         <Row className="align-items-center">
           <Col className="d-flex flex-column align-items-center">
-            <div style={{ paddingTop: 20}} className="social-icon d-flex gap-3">
+            <div
+              style={{ paddingTop: 20 }}
+              className="social-icon d-flex gap-3"
+            >
               <a
                 href="https://www.linkedin.com/in/juan-caceres-orellana/"
                 target="_blank"
@@ -25,7 +28,7 @@ export const Footer = () => {
                 <img src={navIcon3} alt="Icon" />
               </a>
             </div>
-            <p style={{ color: "#fff", padding: 20}} className="m-0">
+            <p style={{ color: "#fff", padding: 20 }} className="m-0">
               Copyright 2022. All Rights Reserved
             </p>
           </Col>
