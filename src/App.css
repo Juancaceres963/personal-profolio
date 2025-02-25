@@ -278,12 +278,13 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .banner {
   position: relative;
   margin-top: 0;
-  padding: 260px 0 100px 0;
+  padding: 260px 0 0 0;
+  height: 100vh;
   z-index: 1;
 }
 .banner .banner-col-text button {
-  width: 300px;
-  margin-left: 80%;
+  width: auto;
+  margin-left: 60%;
 }
 .banner .tagline {
   font-weight: 700;
@@ -360,8 +361,10 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 /************ Skills Css ************/
 
 .skill {
-  padding: 0 0 50px 0;
+  scroll-margin-top: 100px;
+  padding: 0px 0 50px 0;
   position: relative;
+  background: #000000;
 }
 .skill-bx {
   background: #151515;
@@ -416,9 +419,20 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 /************ Projects Css ************/
 .project {
-  padding: 80px 0;
+  padding: 60px 0;
   position: relative;
-  background-color: black;
+  height:auto;
+  margin: 0;
+  --x: calc(var(--posX, 0) * 0.3px);
+  --y: calc(var(--posY, 0) * 0.3px);
+  background-image: 
+    linear-gradient(115deg, rgb(35, 3, 53), rgb(59, 7, 104)), 
+    radial-gradient( 90% 100% at calc( 50% + var(--x)) calc( 0% + var(--y)), rgb(200 200 200), rgb(42, 8, 96)), 
+    radial-gradient(100% 100% at calc( 80% - var(--x)) calc( 0% - var(--y)), rgb(97, 2, 15), rgb(0, 0, 0)), 
+    radial-gradient(150% 210% at calc(100% + var(--x)) calc( 0% + var(--y)), rgb(45, 3, 109), rgb(246, 255, 0)), 
+    radial-gradient(100% 100% at calc(100% - var(--x)) calc(30% - var(--y)), rgb(241, 234, 28), rgb(14, 0, 171)), 
+    linear-gradient(60deg, rgb(145, 143, 148), rgb(177, 173, 190));
+  background-blend-mode: overlay, overlay, difference, difference, difference, normal;
 }
 .project h2 {
   font-size: 45px;
@@ -430,13 +444,17 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   font-size: 18px;
   letter-spacing: 0.8px;
   line-height: 1.5em;
-  margin: 14px auto 30px auto;
+  margin: 40px auto 30px auto;
   text-align: center;
-  width: 56%;
+  width: 90%;
+}
+.project p:first-child {
+  margin: 0px auto;
 }
 .project .nav.nav-pills {
+  height: auto;
   width: 72%;
-  margin: 0 auto 40px auto;
+  margin: auto;
   border-radius: 50px;
   background-color: rgb(255 255 255 / 10%);
   overflow: hidden;
@@ -539,6 +557,16 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   width: 35%;
   right: 0;
   z-index: -4;
+}
+
+/******* Contact ******/ 
+.contact {
+  padding: 18px;
+}
+
+.contact h2 {
+  font-size: 45px;
+  font-weight: 700;
 }
 
 /********************** React App ****************/
