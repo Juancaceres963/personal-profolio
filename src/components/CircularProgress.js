@@ -6,19 +6,19 @@
  const elementRef = useRef(null); // Referencia al componente en el DOM
 
  const radius = 50;
- const strokeWidth = 17;
+ const strokeWidth = 18;
  const circumference = 2 * Math.PI * radius;
 
  useEffect(() => {
  const observer = new IntersectionObserver(
    ([entry]) => {
        if (entry.isIntersecting) {
-         setTimeout(() => setIsVisible(true), 300); // Espera 0.3 segundos antes de activar la animación
+         setTimeout(() => setIsVisible(true), ); // Espera 0.3 segundos antes de activar la animación
      } else {
       setIsVisible(false); // Resetea si se oculta (opcional)
        }
     },
-      { threshold: 0.5 } // Detecta cuando el 50% del elemento es visible
+      { threshold: 0.2 } // Detecta cuando el 50% del elemento es visible
      );
 
       if (elementRef.current) {
@@ -30,7 +30,7 @@
     useEffect(() => {
       if (!isVisible) return;
       let startTime = performance.now();
-      const duration = 9000;
+      const duration = 6500;
 
       const easeOutExpo = (t) => 1 - Math.pow(2, -10 * t);
       const animate = (currentTime) => {
