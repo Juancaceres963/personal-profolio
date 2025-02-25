@@ -69,8 +69,19 @@ export const Banner = () => {
               Building the future with well-designed, <br />
               scalable, and maintainable software solutions.
             </p>
-            <button onClick={() => console.log("connet")}>
-              Let's connect <ArrowRightCircle size={25} />
+            <button
+              onClick={() => {
+                const textarea = document.getElementById("connect-textarea");
+                if (textarea) {
+                  textarea.scrollIntoView({
+                    behavior: "smooth",
+                    block: "center",
+                  });
+                  textarea.focus();
+                }
+              }}
+            >
+              Drop me a message <ArrowRightCircle size={25} />
             </button>
           </Col>
         </Row>
