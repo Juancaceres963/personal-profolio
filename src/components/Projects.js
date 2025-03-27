@@ -9,10 +9,7 @@ import {
   Tab,
 } from "react-bootstrap";
 import { ProjectCard } from "./ProjectCard";
-import projImg1 from "../assets/img/JuanCáceres.png";
-import projImg2 from "../assets/img/project-img2.png";
-import projImg3 from "../assets/img/project-img3.png";
-import projImg4 from "../assets/img/project-img1.png";
+import { projects } from "./projectsData"; // ✅ Importamos la lista de proyectos
 import colorSharp2 from "../assets/img/color-sharp2.png";
 
 export const Projects = () => {
@@ -43,7 +40,7 @@ export const Projects = () => {
 
   const categoryDescriptions = {
     first:
-      "I am a developer passionate about creating efficient and scalable solutions, with a focus on designing systems that optimize processes and improve user experience. I specialize in web development using technologies such as React, Redux, and ASP.NET, creating efficient APIs, implementing optimized databases in SQL Server, and integrating cloud tools for scalability. I have worked on projects where data structure optimization and interface improvement resulted in more efficient performance and a smooth user experience.",
+      "I am a developer passionate about creating efficient and scalable solutions, with a focus on designing systems that optimize processes and improve user experience. I specialize in web development using technologies such as CSS, Bootstrap, Javascript, React, Router, Redux, SQL and ASP.NET, creating efficient APIs, implementing optimized databases in SQL Server, and integrating cloud tools for scalability. I have worked on projects where data structure optimization and interface improvement resulted in more efficient performance and a smooth user experience.",
     second:
       "Throughout my career, I have worked on developing marketing and visual design strategies for brands, using tools such as Canva and Figma to create engaging content such as images, logos, slides, and brochures. These tools have allowed me to collaborate in real time with teams, optimizing creative processes and improving the visual experience in each project. \n\n In the area of ​​digital marketing, I apply my knowledge of Meta tools (Facebook, Instagram, WhatsApp) to boost the social media presence of various brands. Although my experience in online sales is still in progress, he managed content campaigns and profile optimization with the aim of generating greater interaction and reach. My focus has always been on improving visibility and communication with the audience, through relevant and engaging content.",
     third:
@@ -58,68 +55,6 @@ export const Projects = () => {
       </span>
     ));
   };
-
-  const projects = [
-    // Proyectos de Software Development
-    {
-      title: "Project 1",
-      description: "Design & Development",
-      imgUrl: projImg1,
-      category: "first",
-    },
-    {
-      title: "Project 2",
-      description: "Web App Development",
-      imgUrl: projImg2,
-      category: "first",
-    },
-    {
-      title: "Project 3",
-      description: "API Design",
-      imgUrl: projImg3,
-      category: "first",
-    },
-
-    // Proyectos de Marketing & Design
-    {
-      title: "Project 4",
-      description: "Brand Strategy",
-      imgUrl: projImg4,
-      category: "second",
-    },
-    {
-      title: "Project 5",
-      description: "Social Media Campaign",
-      imgUrl: projImg2,
-      category: "second",
-    },
-    {
-      title: "Project 6",
-      description: "Graphic Design",
-      imgUrl: projImg3,
-      category: "second",
-    },
-
-    // Proyectos de Management
-    {
-      title: "Project 7",
-      description: "Project Coordination",
-      imgUrl: projImg1,
-      category: "third",
-    },
-    {
-      title: "Project 8",
-      description: "Business Automation",
-      imgUrl: projImg2,
-      category: "third",
-    },
-    {
-      title: "Project 9",
-      description: "Process Optimization",
-      imgUrl: projImg3,
-      category: "third",
-    },
-  ];
 
   return (
     <section className="project" id="projects">
@@ -195,7 +130,7 @@ export const Projects = () => {
                   </Tab.Pane>
 
                   <Tab.Pane eventKey="second">
-                    <Row>
+                    <Row className="row-projects-container">
                       {projects
                         .filter((project) => project.category === "second") // Filtra solo los de marketing y diseño
                         .map((project, index) => (

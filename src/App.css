@@ -108,7 +108,7 @@ nav.navbar .navbar-nav .nav-link.navbar-link {
   color: #fff;
   letter-spacing: 0.8px;
   padding: 0 25px;
-  font-size: 18px;
+  font-size: 19px;
   opacity: 0.75;
 }
 nav.navbar .navbar-nav a.nav-link.navbar-link:hover,
@@ -124,8 +124,8 @@ span.navbar-text {
   margin-left: 14px;
 }
 .social-icon a {
-  width: 50px;
-  height: 50px;
+  width: 55px;
+  height: 55px;
   background: rgba(217, 217, 217, 0.1);
   display: inline-flex;
   border-radius: 50%;
@@ -137,8 +137,8 @@ span.navbar-text {
 }
 .social-icon a::before {
   content: "";
-  width: 50px;
-  height: 50px;
+  width: 55px;
+  height: 55px;
   position: absolute;
   background-color: #ffffff;
   border-radius: 50%;
@@ -251,6 +251,10 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   }
 }
 
+.video-background {
+  height: 120vh;
+}
+
 .video-background video {
   position: absolute;
   top: 50%;
@@ -279,8 +283,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   position: relative;
   margin-top: 0;
   padding: 260px 0 0 0;
-  height: 100vh;
-  z-index: 1;
+  height: 120vh;
 }
 .banner .banner-col-text button {
   width: auto;
@@ -326,7 +329,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   color: #fff;
   font-weight: 700;
   font-size: 20px;
-  margin-top: 60px;
+  margin-top: 40px;
   letter-spacing: 0.8px;
   display: flex;
   align-items: center;
@@ -371,7 +374,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   border-radius: 64px;
   text-align: center;
   padding: 60px 50px;
-  margin-top: -60px;
+  margin-top: -80px;
 }
 .skill-bx button {
   background-color: #080808d8;
@@ -505,6 +508,10 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   border: 1px solid rgba(255, 255, 255, 0.5);
   border-radius: 0 55px 55px 0;
 }
+.row-projects-container {
+  display: flex;
+  justify-content: center;
+}
 .proj-imgbx {
   position: relative;
   border-radius: 30px;
@@ -532,6 +539,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   transition: 0.5s ease-in-out;
   opacity: 0;
   width: 100%;
+  padding: 0 20px;
 }
 .proj-imgbx:hover .proj-txtx {
   top: 50%;
@@ -549,6 +557,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   font-size: 15px;
   letter-spacing: 0.8px;
   color: #fff;
+  
 }
 .background-image-right {
   top: 20%;
@@ -557,6 +566,89 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   width: 35%;
   right: 0;
   z-index: -4;
+}
+
+/****** ProjectDetails ******/
+
+.project-details {
+  display: flex;
+  padding: 100px;
+  margin: 0px 100px;
+}
+.project-details-text {
+  padding-top: 30px;
+  flex: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items:start;
+  
+}
+
+/*Popup*/
+
+/* Estilos para el modal */
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(5px);
+}
+
+/* Contenedor del modal */
+.modal-content {
+  padding-bottom: 40px;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  left: 50%;
+  transform: translate(-50%, -100%);
+  box-shadow: 5px 4px 90px 40px rgba(17, 154, 178, 0.397);
+  min-height: 300px; /* Ajusta la altura aquí */
+  text-align: center;
+  width: 600px !important;
+  background: linear-gradient(90.21deg, #aa367c -5.91%, #4a2fbd 111.58%) !important;
+  border-radius: 30px !important;
+  border: 3px solid rgb(255, 255, 255) !important;
+}
+
+/* Título */
+.modal-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #333;
+  font-size: 30px;
+}
+
+/* Descripción */
+.modal-description {
+  color: #ffffff;
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+/* Botón de cerrar */
+.modal-close {
+  position: absolute;
+  top: 200px;
+  right: 45%;
+  background: #d81414;
+  border-radius: 50%;
+  padding: 12px;
+  border: 2px solid white;
+  cursor: pointer;
+}
+
+.modal-close:hover {
+  background: #ddd;
+}
+
+/* Icono dentro del botón */
+.icon-close {
+  width: 20px;
+  height: 20px;
+  color: #555;
 }
 
 /******* Contact ******/ 
@@ -569,6 +661,44 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   font-weight: 700;
 }
 
+.subtitulo-contact {
+  font-size: 45px;
+  font-weight: 700;
+}
+
+/****** Footer ********/
+.footer-container {
+  font-family: Centra;
+  font-weight: 500;
+  width: 100%;
+  display: flex;
+  padding-bottom: 50px;
+}
+
+.footer-container div {
+  flex: 1;
+  justify-content: center;
+}
+
+.logo-footer {
+  margin-top: 60px !important;
+  scale: 0.8;
+  object-fit: contain;
+}
+
+.footer-redes {
+  margin-top: 66px !important;
+  font-size: 20px;
+}
+
+.copy {
+  width: 100%;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  margin: 0;
+  background-color: #492fbd81;
+}
 /********************** React App ****************/
 .App {
   text-align: center;

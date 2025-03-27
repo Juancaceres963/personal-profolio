@@ -71,7 +71,7 @@ export const Banner = () => {
             </p>
             <button
               onClick={() => {
-                const textarea = document.getElementById("connect-textarea");
+                const textarea = document.getElementById("message");
                 if (textarea) {
                   textarea.scrollIntoView({
                     behavior: "smooth",

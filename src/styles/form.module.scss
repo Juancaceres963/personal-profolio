@@ -1,0 +1,80 @@
+.form {
+    width: 100%;
+    padding: 40px 0px !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Centra;
+
+    .label {
+      color: rgb(129, 129, 129);
+      font-weight: 700;
+      font-size:22px;
+    }
+    .mail,
+    .textarea {
+      width: 100%;
+      border-radius: 10px;
+      padding: 10px;
+      border: none;
+      margin: 10px 0px;
+      transition: 0.3s;
+      outline: none;
+      border: 3px solid #4a2fbd;
+      background-color: transparent;
+      color: rgb(255, 255, 255);
+      font-size: 16px;
+      font-weight: bolder;
+    }
+    .mail::placeholder,
+    .textarea::placeholder {
+      color: rgb(129, 129, 129);
+    }
+    .mail:focus,
+    .textarea:focus {
+      border: 3px solid #282355;
+      background-color: rgba(0, 0, 0, 0.274);
+      color: white;
+    }
+    .textarea {
+      height: 40%;
+    }
+    .button {
+      background-color: transparent;
+      border-radius: 10px;
+      font-size: 20px;
+      border: none;
+      color: rgb(129, 129, 129);
+      padding: 3px 5px;
+      width: 130px;
+      cursor: pointer;
+      border: 1px solid #4a2fbd;
+      font-weight: bolder;
+      transition: all ease .8s;
+      margin-top: 15px;
+  
+      &:hover {
+        color: white;
+        background-color: rgba(0, 0, 0, 0.418);
+        transition: all ease .8s;
+      }
+    }
+  }
+  
+  .loading {
+    padding-top: 10px;
+  }
+  
+  .message {
+    font-size: 30px;
+  }
+  
+//   @media only screen and (max-width: 900px) {
+//     .form {
+//       width: 70vw;
+  
+//       .textarea {
+//         height: 100px;
+//       }
+//     }
+//   }
