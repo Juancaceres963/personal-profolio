@@ -12,7 +12,6 @@
  import 'bootstrap/dist/css/bootstrap.min.css';
  import "bootstrap/dist/js/bootstrap.bundle.min.js";
  import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
- 
 
 //**********  Version n3 del dia de hoy 26/03 *************//
 function App() {

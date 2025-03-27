@@ -5,6 +5,7 @@ import navIcon3 from "../assets/img/nav-icon3.svg";
 import logo from "../assets/img/Logo_JCcode.png";
 import Form from "./Form";
 
+
 export const Footer = () => {
   return (
     <footer className="footer">
