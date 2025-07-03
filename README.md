@@ -1,70 +1,42 @@
-# Getting Started with Create React App
+🌐 Personal Portfolio – Built with React & Passion
+This is my personal portfolio website built with React and styled using CSS and some Bootstrap elements. It showcases my skills, experience, and projects as a web developer and designer, and includes a custom integration with Mailchimp to handle contact form submissions directly from the site.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+🔧 Features
+Dynamic Landing Section:
+The homepage features a full-screen video background (optimized for performance and lazy-loaded after 30% scroll visibility) with an animated text component that types and deletes role descriptions like “Web Developer”, “Web Designer”, and “UI/UX Designer” in a loop.
 
-## Available Scripts
+Sticky Responsive Navbar:
+A transparent navigation bar that changes on scroll, includes smooth transitions and quick access to internal sections like Skills, Projects, and Contact, as well as external links (LinkedIn, GitHub, Instagram).
 
-In the project directory, you can run:
+Smooth Scroll & Call-to-Action Buttons:
+"Drop me a message" button on the homepage scrolls directly to the contact section at the bottom. The "Let's connect" button links to my LinkedIn profile (subject to change).
 
-### `npm start`
+Skills Section with Interactive Carousel:
+Skills are shown in a horizontal scrollable carousel with animated circular progress indicators that load dynamically as each item appears on screen.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Projects Section with Interactive Filters:
+Displays categorized projects (Software Development, Marketing & Design, and Management). Background subtly reacts to mouse movement. Each category filters the projects accordingly. Clicking on a project uses React Router to navigate to a detail page (under construction – currently shows a placeholder alert).
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Footer with Integrated Contact Form:
+The footer includes social links and a contact form powered by MailchimpForm. It allows users to submit their email and a message without leaving the page. A success message is displayed after successful submission.
 
-### `npm test`
+📫 Contact & Deployment
+Emails submitted through the contact form are received directly in my Mailchimp inbox.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+The site is currently deployed via GitHub Pages. I plan to host it externally in the future once it’s fully finalized.
 
-### `npm run build`
+🤖 Tech Stack
+React
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+CSS + Bootstrap
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+React Router
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Mailchimp Integration
 
-### `npm run eject`
+GitHub Pages Deployment
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+🎯 About this Project
+This portfolio represents my passion for programming, design, and learning. Every piece of functionality — from animations to API integration — was implemented by myself, using official documentation, online resources, code exploration, feedback from peers, and help from tools like ChatGPT.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Most of the projects shown here are personal or collaborative efforts without financial gain, but full of learning. This project is part of my journey to grow as a developer and to pursue a professional career in web development.
