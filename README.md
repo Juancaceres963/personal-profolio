@@ -2,7 +2,7 @@
 ---
 This is my personal portfolio website built with React and styled using CSS and some Bootstrap elements. It showcases my skills, experience, and projects as a web developer and designer, and includes a custom integration with Mailchimp to handle contact form submissions directly from the site.
 
-##🔧 Features
+## 🔧 Features
 
 - **Dynamic Landing Section:**
 The homepage features a full-screen video background (optimized for performance and lazy-loaded after 30% scroll visibility) with an animated text component that types and deletes role descriptions like “Web Developer”, “Web Designer”, and “UI/UX Designer” in a loop.
@@ -22,13 +22,13 @@ Displays categorized projects (Software Development, Marketing & Design, and Man
 - **Footer with Integrated Contact Form:**
 The footer includes social links and a contact form powered by MailchimpForm. It allows users to submit their email and a message without leaving the page. A success message is displayed after successful submission.
 
-##📫 Contact & Deployment
+## 📫 Contact & Deployment
 
 - Emails submitted through the contact form are received directly in my Mailchimp inbox.
 
 - The site is currently deployed via GitHub Pages. I plan to host it externally in the future once it’s fully finalized.
 
-##🤖 Tech Stack
+## 🤖 Tech Stack
 
 - React
 
@@ -40,7 +40,7 @@ The footer includes social links and a contact form powered by MailchimpForm. It
 
 - GitHub Pages Deployment
 
-##🎯 About this Project
+## 🎯 About this Project
 
 This portfolio represents my passion for programming, design, and learning. Every piece of functionality — from animations to API integration — was implemented by myself, using official documentation, online resources, code exploration, feedback from peers, and help from tools like ChatGPT.
 
