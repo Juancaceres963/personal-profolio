@@ -1,5 +1,5 @@
 # 🌐 Personal Portfolio – Built with React & Passion
----
+
 This is my personal portfolio website built with React and styled using CSS and some Bootstrap elements. It showcases my skills, experience, and projects as a web developer and designer, and includes a custom integration with Mailchimp to handle contact form submissions directly from the site.
 
 ## 🔧 Features
